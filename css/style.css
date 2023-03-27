@@ -87,6 +87,27 @@
    
 }
 
+.desc p{
+
+    text-align: left;
+    padding: 1em;
+
+}
+
+.desc a{
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    text-align: center;
+    
+    text-decoration: none;
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
 
 
 .desktop img{
