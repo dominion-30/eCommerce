@@ -1,0 +1,106 @@
+
+/* For Mobile */
+@media screen and (max-width:480px){
+    .desktop{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+   
+    .mobile{
+        border: 2px solid #ccc;
+        width: 80%;
+        margin: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .mobile img{
+        width: 100%;
+    }
+
+
+}
+
+/* For Tablet */
+
+@media screen and (min-width:481px) and (max-width:768px){
+    .mobile{
+        display: none;
+
+    }
+    .desktop{
+        display: none;
+    }
+
+    .container{
+        display: flex;
+        width: 80%;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .tablet{
+        border: 2px solid #ccc;
+        margin: 1em;
+        width: 25%;
+        border-radius: 5px;
+    }
+
+    .tablet img{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+
+}
+
+/* For Desktop */
+@media screen and (min-width:769px){
+    .mobile{
+        display: none;
+    }
+
+    .tablet{
+        display: none;
+    }
+
+
+.container{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+.desktop{
+    border: 2px solid #ccc;
+    width: 20%;
+    margin: 1em;
+    border-radius: 5px;
+   
+}
+
+
+
+.desktop img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 1em;
+
+}
+img{
+    object-fit: contain;
+}
+
+}
+
+
