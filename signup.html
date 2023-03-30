@@ -10,31 +10,52 @@
 <body>
 
     <div class="container">
-        <div class="leftside">
+        <div class="leftside centering">
             <h1>Create an account with Campushop</h1>
             <p>Once you create an account at Campushop, you can personalize your address book and add favourite to your wish list with ease! What are you waiting for!</p>
             <form action="/">
-                <label for="email">Email Address</label>
+                <div class="centering">
+                    <label for="email">Email Address</label>
                 <input type="email" name="email" id="email" placeholder="Email Address">
+
+                </div>
+                
                 <br>
 
-                <label for="fname">Firstname</label>
+                <div class="centering">
+                    <label for="fname">Firstname:</label>
                 <input type="text" name="fname" id="fname" placeholder="Firstname">
+
+                </div>
+
                 <br>
 
-                <label for="sname">Surname</label>
+                <div class="centering">
+                    <label for="sname">Surname:</label>
                 <input type="text" name="sname" id="sname" placeholder="Surname">
-                <br>
+                
+                </div>
 
-                <label for="password">Password</label>
+                <br>
+                
+                <div class="centering">
+                    <label for="password">Password:</label>
                 <input type="password" name="password" id="password">
+                
+                </div>
+
                 <br>
 
-                <label for="retype_password">Retype your password</label>
+                <!-- <div class="centering">
+                    <label for="retype_password">Password:</label>
                 <input type="password" name="retype_password" id="retype_password">
-                <br>
+                
+                </div>
 
-                <label for="country">Select your Country</label>
+                <br> -->
+
+                <div class="centering">
+                    <label for="country">Country</label>
                 <input list="country" name="country">
                 <datalist id="country">
                     <option value="Nigeria">
@@ -46,11 +67,17 @@
 
 
                 </datalist>
+                
+                </div>
+                
                 <br>
             </form>
         </div>
 
-        <div class="rightside"></div>
+        <div class="rightside centering">
+
+            <img src="image/product1.jpg" alt="image of a building">
+        </div>
     </div>
     
 </body>
