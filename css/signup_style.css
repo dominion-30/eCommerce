@@ -1,0 +1,29 @@
+/* mobile view */
+@media screen and (max-width:480px) {
+    
+}
+
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    
+}
+
+@media screen and (min-width:769px){
+
+
+.container{
+    width: 100%;
+    display: flex;
+}
+
+.leftside{
+    width: 50%;
+}
+
+.rightside{
+
+}
+    
+}
+
+
