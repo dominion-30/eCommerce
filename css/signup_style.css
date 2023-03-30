@@ -3,6 +3,17 @@
     .container{
         width: 80%;
     }
+
+    .leftside form{
+        padding: 1em;
+    }
+    .leftside input{
+        padding: 0.5em;
+    }
+
+    .rightside{
+        display: none;
+    }
     
 }
 
