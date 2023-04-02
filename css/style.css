@@ -121,6 +121,13 @@
 img{
     object-fit: contain;
 }
+#showProducts img{
+    width: 10%;
+}
+
+.box h3{
+    color: yellow;
+}
 
 }
 

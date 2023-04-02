@@ -30,15 +30,36 @@
 
 // get a product
 
-fetch('https://fakestoreapi.com/products/1')
+// fetch('https://fakestoreapi.com/products/2')
+// .then(request=>request.json())
+// .then(json=>{let item = `<div class="">
+// <h3>${json.title}</h3>
+// <p><strong>Price:</strong>${json.price}</p>
+// <p><strong>Description:${json.description}</strong></p>
+// <div><img src="${json.image}"></div>
+// </div>`;
+
+// document.getElementById("showProducts").innerHTML = item;
+
+// })
+
+
+// get different products
+fetch("https://fakestoreapi.com/products")
 .then(request=>request.json())
-.then(json=>{let item = `<div class="">
-<h3>${json.title}</h3>
-<p><strong>Price:</strong>${json.price}</p>
-<p><strong>Description:${json.description}</strong></p>
-<div><img src="${json.image}"></div>
-</div>`;
+.then(json=>displayProducts(json));
 
-document.getElementById("showProducts").innerHTML = item;
+async function displayProducts(products){
+    products.forEach(product => {
+        const item = `<div class="box">
+        <h3>${product.title}</h3>
+        <p><strong>Price:</strong>${product.price}</p>
+        <p><strong>Category</strong>${product.category}</p>
+        <p><strong>${product.description}</strong></p>
+        <div><img src="${product.image}"></div>
 
-})
+        </div>`;
+        document.getElementById('showProducts').insertAdjacentHTML('beforeend', item);
+        
+    });
+}
