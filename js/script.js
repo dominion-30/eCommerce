@@ -43,6 +43,7 @@
 
 // })
 
+{/* <p><strong>${product.description}</strong></p> */}
 
 // get different products
 fetch("https://fakestoreapi.com/products")
@@ -55,8 +56,9 @@ async function displayProducts(products){
         <h3>${product.title}</h3>
         <p><strong>Price:</strong>${product.price}</p>
         <p><strong>Category:</strong>${product.category}</p>
-        <p><strong>${product.description}</strong></p>
+        
         <div><img src="${product.image}"></div>
+        <button type="button"><a href="/">Buy</a></button>
 
         </div>`;
         document.getElementById('showProducts').insertAdjacentHTML('beforeend', item);
