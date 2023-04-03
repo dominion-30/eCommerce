@@ -62,6 +62,8 @@ async function displayProducts(products){
 
         </div>`;
         document.getElementById('showProducts').insertAdjacentHTML('beforeend', item);
+        localStorage.setItem(${product.id},);
         
     });
 }
+
