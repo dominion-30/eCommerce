@@ -1,48 +1,36 @@
 
 /* For Mobile */
+
 @media screen and (max-width:480px){
-    .container{
+    body{
+        font-size: 1em;
+    }
+    #showProducts{
         width: 100%;
-        border: #ccc solid;
-        border-radius: 5px;
-        margin-top: 1em;
-       
-    }
-    .content{
-        padding: 1em;
-    }
-    .centering{
+        display: block;
         margin-left: auto;
         margin-right: auto;
-        display: block;
-        width: 50%;
+
     }
+   
+    .content{
+        margin-top: 1em;
+        width: 80%;
+        border: #ccc solid;
+        border-radius: 5px;
+        padding: 1em;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+ 
     div img{
         width: 50%;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-    /* .desktop{
-        display: none;
-    }
-    .tablet{
-        display: none;
-    }
-   
-    .mobile{
-        border: 2px solid #ccc;
-        width: 80%;
-        margin: 1em;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        border-radius: 5px;
-    }
-
-    .mobile img{
-        width: 100%;
-    } */
+  
 
 
 }
@@ -50,106 +38,54 @@
 /* For Tablet */
 
 @media screen and (min-width:481px) and (max-width:768px){
-    /* .mobile{
-        display: none;
+    
 
-    }
-    .desktop{
-        display: none;
-    }
 
-    .container{
+ 
+    #showProducts{
         display: flex;
-        width: 80%;
+        width: 100%;
         flex-wrap: wrap;
-        margin: auto;
-    }
 
-    .tablet{
-        border: 2px solid #ccc;
-        margin: 1em;
-        width: 25%;
+
+    }
+    
+
+    .content{
+        width: 40%;
+
+        
+        margin-top: 1em;
+        
+        border: #ccc solid;
         border-radius: 5px;
+        padding: 1em;
+        margin-left: auto;
+        margin-right: auto;
+
+        
     }
 
-    .tablet img{
-        width: 80%;
+    div img{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* .centering{
         margin-left: auto;
         margin-right: auto;
         display: block;
-    }
- */
+        width: 50%;
+    } */
 
 }
 
 /* For Desktop */
 @media screen and (min-width:769px){
-    /* .mobile{
-        display: none;
-    }
+ 
 
-    .tablet{
-        display: none;
-    }
-
-
-.container{
-    display: flex;
-    width: 90%;
-    flex-wrap: wrap;
-    margin: auto;
-
-}
-
-.desktop{
-    border: 2px solid #ccc;
-    width: 20%;
-    margin: 1em;
-    border-radius: 5px;
-   
-}
-
-.desc p{
-
-    text-align: left;
-    padding: 1em;
-
-}
-
-.desc a{
-    border-radius: 5px;
-    border: 2px solid #ccc;
-    text-align: center;
-    
-    text-decoration: none;
-    display: block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1em;
-    margin-bottom: 1em;
-}
-
-
-
-.desktop img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    padding: 1em;
-
-}
-img{
-    object-fit: contain;
-}
-#showProducts img{
-    width: 10%;
-}
-
-.box h3{
-    color: yellow;
-} */
 
 }
 

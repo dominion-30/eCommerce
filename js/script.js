@@ -51,16 +51,13 @@ fetch("https://fakestoreapi.com/products")
 
 async function displayProducts(products){
     products.forEach(product => {
-        const item = `<div class="container">
-        <div class="content">
+        const item = `<div class="content">
         <h3>${product.title}</h3>
         <p><strong>Price:</strong>${product.price}</p>
         <p><strong>Category:</strong>${product.category}</p>
         <p><strong>${product.description}</strong></p>
         <div><img src="${product.image}"></div>
 
-        </div>
-        
         </div>`;
         document.getElementById('showProducts').insertAdjacentHTML('beforeend', item);
         
