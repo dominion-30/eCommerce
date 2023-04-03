@@ -58,11 +58,11 @@ async function displayProducts(products){
         <p><strong>Category:</strong>${product.category}</p>
         
         <div><img src="${product.image}" alt="image of product"></div>
-        <button type="button"><a href="https://fakestoreapi.com/products/${product.id}" >Buy</a></button>
+        <button type="button"><a href="product.html?id=${product.id}" >Buy</a></button>
 
         </div>`;
         document.getElementById('showProducts').insertAdjacentHTML('beforeend', item);
-        localStorage.setItem(${product.id},);
+        
         
     });
 }

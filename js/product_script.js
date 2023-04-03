@@ -1,6 +1,14 @@
+// get the current URL
+let currentURL = window.location.href;
 
+// slip to just the part after the question mark
 
-fetch("https://fakestoreapi.com/products/1")
+let urlSearch = new URL(currentURL);
+
+// get value of parameter from the URL
+let value_of_param = urlSearch.searchParams.get("id");
+
+fetch(`https://fakestoreapi.com/products/${value_of_param}`)
 .then(request=>request.json())
 .then(json=>{
     let item = `<div>
