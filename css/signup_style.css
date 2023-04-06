@@ -12,6 +12,7 @@
         padding: 0.5em;
     }
 
+
     .rightside img{
         display: none;
     }
@@ -20,6 +21,22 @@
     margin-right: auto;
     display: block;
     width: 50%;
+}
+
+    form button{
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+/* .centering button{
+    border-radius: 2px;
+    width: 100%;
+    padding: 0.5em;
+    
+} */
+button a{
+    text-decoration: none;
 }
     
 }
@@ -58,6 +75,15 @@
         width: 100%;
     }
     
+    .centering button{
+        border-radius: 2px;
+        width: 50%;
+        padding: 0.5em;
+        
+    }
+    button a{
+        text-decoration: none;
+    }
 }
 
 @media screen and (min-width:769px){
@@ -93,6 +119,15 @@
 }
 .rightside img{
     width: 100%;
+}
+.centering button{
+    border-radius: 2px;
+    width: 30%;
+    padding: 0.5em;
+    
+}
+button a{
+    text-decoration: none;
 }
     
 }
