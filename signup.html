@@ -13,7 +13,26 @@
         <div class="leftside centering">
             <h1>Create an account with Campushop</h1>
             <p>Once you create an account at Campushop, you can personalize your address book and add favourite to your wish list with ease! What are you waiting for!</p>
-            <form action="/">
+            
+            <p id="demo"></p>
+
+            <form action="database.html" method="get" >
+                <div class="centering">
+                    <label for="user_name">Username:</label>
+                <input type="text" name="user_name" id="user_name" placeholder="Username" value="">
+                
+                </div>
+
+                <br>
+
+                <div class="centering">
+                    <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+                
+                </div>
+                
+                <br>
+
                 <div class="centering">
                     <label for="email">Email Address</label>
                 <input type="email" name="email" id="email" placeholder="Email Address">
@@ -24,27 +43,23 @@
 
                 <div class="centering">
                     <label for="fname">Firstname:</label>
-                <input type="text" name="fname" id="fname" placeholder="Firstname">
+                <input type="text" name="fname" id="fname" placeholder="Firstname" value="">
 
                 </div>
 
                 <br>
 
                 <div class="centering">
-                    <label for="sname">Surname:</label>
-                <input type="text" name="sname" id="sname" placeholder="Surname">
+                    <label for="sname">lastname:</label>
+                <input type="text" name="lname" id="lname" placeholder="Lastname" value="">
                 
                 </div>
 
                 <br>
-                
-                <div class="centering">
-                    <label for="password">Password:</label>
-                <input type="password" name="password" id="password">
-                
-                </div>
 
-                <br>
+               
+                
+                
 
                 <!-- <div class="centering">
                     <label for="retype_password">Password:</label>
@@ -53,7 +68,7 @@
                 </div>
 
                 <br> -->
-
+<!-- 
                 <div class="centering">
                     <label for="country">Country</label>
                 <input list="country" name="country">
@@ -66,14 +81,12 @@
                     <option value="Sweden">  
 
 
-                </datalist>
+                </datalist> -->
                 
-                </div>
+                <!-- </div> -->
                 
                 <br>
-                <button type="submit" class="centering">
-                    <a href="/">Sign Up</a>
-                </button>
+                <input type="submit" onclick="submitUser()">
             </form>
         </div>
 
@@ -89,6 +102,8 @@
             </form>
         </div> -->
     </div>
+
+    <script src="js/sign_up_script.js"></script>
     
 </body>
 </html>
