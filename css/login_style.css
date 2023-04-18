@@ -1,0 +1,41 @@
+body{
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.container{
+    /* width: 30%;
+    margin: auto;
+
+    display: block; */
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    /* position: relative;
+    height: 400px; */
+}
+.centering{
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user_name_box, .user_password_box{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+form input{
+    padding: 0.5em;
+}
+
+.submit{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 1em;
+    margin-bottom: 1em;
+}
