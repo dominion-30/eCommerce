@@ -18,7 +18,7 @@
 
             <div class="centering">
                 <label for="role_id">Role ID:</label>
-            <input type="text" name="role_id" id="role_id" placeholder="Role ID" value="">
+            <input type="text" name="role_id" id="role_id" placeholder="Role ID" value="1" hidden>
             
             </div>
 
@@ -26,7 +26,7 @@
 
             <div class="centering">
                 <label for="purchase_type_id">Purchase ID:</label>
-            <input type="text" name="purchase_type_id" id="purchase_type_id" placeholder="Purchase Type ID" value="">
+            <input type="text" name="purchase_type_id" id="purchase_type_id" placeholder="Purchase Type ID" value="1" hidden>
             
             </div>
 
@@ -42,7 +42,7 @@
 
             <div class="centering">
                 <label for="email">Email:</label>
-            <input type="text" name="email" id="email" placeholder="Email" value="">
+            <input type="email" name="email" id="email" placeholder="Email" value="">
             
             </div>
 
@@ -57,31 +57,68 @@
             <br>
 
             <div class="centering">
-                <label for="email">Email Address</label>
-            <input type="email" name="email" id="email" placeholder="Email Address">
+                <label for="address">Address</label>
+            <input type="text" name="address" id="address" placeholder="Address">
 
             </div>
             
             <br>
 
             <div class="centering">
-                <label for="fname">Firstname:</label>
-            <input type="text" name="fname" id="fname" placeholder="Firstname" value="">
+                <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Phone" value="">
 
             </div>
 
             <br>
 
             <div class="centering">
-                <label for="sname">lastname:</label>
-            <input type="text" name="lname" id="lname" placeholder="Lastname" value="">
+                <label for="description">Description:</label>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Input text here"></textarea>
+            
             
             </div>
 
             <br>
+
+            <div class="centering">
+                <label for="logo">Logo:</label>
+            <input type="image" name="logo" id="logo" placeholder="Logo" value="logo" hidden>
+
+            </div>
+
+            <br>
+
+
+            <div class="centering">
+                <label for="image">Image:</label>
+            <input type="image" name="image" id="image" placeholder="Image" value="image" hidden>
+
+            </div>
+
+            <br>
+
+
+            <div class="centering">
+                <label for="rate">Rate:</label>
+            <input type="text" name="rate" id="rate" placeholder="Rate" value="0" hidden> 
+
+            </div>
+
+            <br>
+
+
+            <div class="centering">
+                <label for="number_of_rate">Number of Rate:</label>
+            <input type="text" name="number_of_rate" id="number_of_rate" placeholder="Number of Rate" value="0" hidden>
+
+            </div>
+
+            <br>
+
             
             <br>
-            <input type="submit" onclick="submitUser()">
+            <input type="submit" onclick="registerUser()">
 
           
         </div>

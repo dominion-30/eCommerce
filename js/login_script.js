@@ -2,7 +2,20 @@ function submitUser(){
 
     let user_name = document.getElementById("user_name").value;
     let user_password = document.getElementById("user_password").value;
-    console.log(user_name, user_password);
+    // console.log(user_name, user_password);
+
+    fetch("https://real-estate.smid.com.ng/api/sign-in",{
+        method:"POST",
+        body:JSON.stringify(
+            {
+                email:user_name,
+                password:user_password
+            }
+        )
+    })
+    
+    .then(user_data=>user_data.json())
+    .then(json=>console.log(user_name))
 }
 // let user_value = document.getElementById("user_name").value;
 // console.log(user_value);
