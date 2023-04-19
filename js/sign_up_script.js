@@ -31,7 +31,9 @@ function registerUser(){
    
 
     fetch("https://real-estate.smid.com.ng/api/sign-up",{
+    
         method:"POST",
+        headers: {"Content-type": "application/json;charset=UTF-8"},
         body:JSON.stringify(
 
             {
